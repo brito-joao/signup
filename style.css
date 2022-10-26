@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+:root{
+    --background-color:#1b1b1ba6;
+    --link-color:#0067b8;
+}
+
+.backg{
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    border:none;
+}
+.main{
+    position:fixed;
+    margin-top:250px;
+    background-color: white;
+    width: 340px;
+    height: 30vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+    
+}
+.main img{
+    height: 6vh;
+    width: 250px;
+    
+}
+.main p{
+    font-size: 1.5em;
+    margin: 0%;
+}
+.main input{
+    width: 340px;
+    height: 40px;
+    font-size: 0.9rem;
+    border:none;
+    border-bottom: 1px solid;
+}
+.main div{
+    display: flex;
+    font-size: 9px;
+    gap: 5px;
+    align-items: center;
+    font-weight:lighter;
+
+}
+div a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--link-color);
+}
+div .sec-link{
+    margin-top: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    font-size: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    background-color: var(--link-color);
+    color: white;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    background-color:var(--background-color);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    
+}
