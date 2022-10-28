@@ -13,16 +13,16 @@
 
 .backg{
     position: fixed;
-    width: 100vw;
+    min-width: 100vw;
     height:100vh;
     border:none;
 }
 .main{
     position:fixed;
-    margin-top:30vh;
+    margin-top:26vh;
     background-color: white;
     width: 360px;
-    height: 26vh;
+    min-height: 26vh;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@
 }
 .main img{
     height: 4vh;
-    width: 180px;
+    width: 9rem;
     
 }
 .form{
@@ -122,8 +122,8 @@ div .sec-link{
 }
 button{
     font-size: 15px;
-    padding-bottom: 1vh;
-    padding-top: 8px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     padding-left: 29px;
     padding-right: 29px;
     background-color: var(--link-color);
@@ -162,4 +162,5 @@ body{
 }
 .footer .dots{
     font-size: 0.6rem;
+    padding-right: 0.5rem;
 }
